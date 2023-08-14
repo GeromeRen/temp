@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-14T05:18:31.307Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="aILYk_CmcJ_8PFtI8FRB" version="21.6.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-14T05:26:20.467Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="DwRWvxTD5EdbSrn7P6M8" version="21.6.8" type="github">
   <diagram name="Page-1" id="thd2gP7QPJdDt4dVLzzo">
-    <mxGraphModel dx="1754" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2215" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -326,6 +326,66 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="730" y="2310" as="sourcePoint" />
             <mxPoint x="780" y="2260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-35" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="2750" width="320" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-36" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="2750" width="320" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-37" value="Web Tier" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="2720" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-38" value="DatabaseTier" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="503.5" y="2720" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-39" value="Web Subnet (Public)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="2760" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-40" value="DB Subnet (Public)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="486.5" y="2760" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-42" value="WEB NACL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="2750" width="60" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-43" value="Database NACL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="2750" width="60" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-45" value="Client Ephemeral Port" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="3030" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-46" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="2910" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-47" value="Amazon RDS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2890" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-48" value="DB Instance port 3306" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2980" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-49" value="Allow Outbound TCP on Port 3306 to DB Subnet CIDR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="2830" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-50" value="Allow Inbound TCP On port 3306 From Web Subnet CIDR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="257" y="2820" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-52" value="Allow Outbound TCP on Port 1024-65535 Web Subnet CIDR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="2960" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-53" value="Allow Inbound TCP on Port 1024-85535 from DB Subnet CIDR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="25" y="2960" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-56" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" edge="1" parent="1" source="Jqd81Fj2wLlkBFGxSpRS-46" target="Jqd81Fj2wLlkBFGxSpRS-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-210" y="2900" as="sourcePoint" />
+            <mxPoint x="630" y="2880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jqd81Fj2wLlkBFGxSpRS-61" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Jqd81Fj2wLlkBFGxSpRS-48" target="Jqd81Fj2wLlkBFGxSpRS-46">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="3140" as="sourcePoint" />
+            <mxPoint x="250" y="3090" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
